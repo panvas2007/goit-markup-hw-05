@@ -309,6 +309,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   color: var(--background-color);
 }
 .case-text {
@@ -444,7 +447,7 @@ img {
 .clients-list li.clients-link a:focus {
   border-color: #2196f3;
   fill: #2196f3;
-  /* outline: none; */
+  outline: transparent;
 }
 .clients-list li.clients-link:last-child {
   margin-right: 0px;
@@ -487,11 +490,12 @@ img {
 .footer-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0px;
+  margin-bottom: 20px;
 }
 .footer-icon {
   padding-left: 100px;
@@ -499,7 +503,7 @@ img {
 .icon-item {
   display: flex;
   padding: 0px;
-  margin-top: 20px;
+  margin: 0px;
   list-style: none;
 }
 .icon-link a {
@@ -522,7 +526,7 @@ img {
 .icon-link a:focus {
   background-color: #188ce8;
   fill: #ffffff;
-  outline: none;
+  outline: 0;
   /* transition: all 0.4s; */
 }
 
@@ -606,7 +610,7 @@ img {
 }
 .project-pic {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .project-thumb {
   position: absolute;
@@ -616,13 +620,17 @@ img {
   display: flex;
   align-items: center;
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
   padding: 0px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover .project-thumb {
   opacity: 1;
   transform: translatey(-100%);
+}
+.project-link:focus .project-thumb {
+  opacity: 1;
+  transform: translatey(-100%);
+  outline: none;
 }
 .project-desk {
   display: inline-block;
@@ -680,17 +688,15 @@ img {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  transform: translatex(165%);
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
   cursor: pointer;
 }
 .backdrop.is-hidden {
