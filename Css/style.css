@@ -695,10 +695,11 @@ img {
   background-color: #fff;
   cursor: pointer;
 }
-.hero-img {
-  width: 18px;
-  height: 18px;
+
+.hero-btn:hover {
+  fill: var(--logo-color);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
